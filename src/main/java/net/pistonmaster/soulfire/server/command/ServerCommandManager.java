@@ -68,7 +68,6 @@ public class ServerCommandManager {
         // Help
         commands.add(new HelpCommand());
 
-
         // Movement
         commands.add(new WalkCommand());
         commands.add(new ForwardCommand());

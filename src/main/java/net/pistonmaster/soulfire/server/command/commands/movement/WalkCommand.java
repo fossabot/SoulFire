@@ -69,7 +69,6 @@ public class WalkCommand implements ICommand {
             }
         }
 
-
         if (args.length == 2) { // x z path
             try {
                 int x = Integer.parseInt(args[0]);

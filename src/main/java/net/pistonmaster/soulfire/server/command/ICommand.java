@@ -21,7 +21,10 @@ import java.util.List;
 
 public interface ICommand {
     List<String> getAliases();
+
     String getDescription();
+
     String getSyntax();
+
     int onCommand(String cmd, String[] args, ServerCommandManager manager) throws Exception;
 }

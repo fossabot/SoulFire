@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package net.pistonmaster.soulfire.server.command.commands;
+package net.pistonmaster.soulfire.server.command.commands.movement;
 
 import com.github.steveice10.mc.protocol.data.game.entity.RotationOrigin;
 import com.mojang.brigadier.Command;
@@ -48,7 +48,6 @@ public class LookAtCommand implements ICommand {
             throw new SoulfireCommandSyntaxException("You need to specify at least one coordinate");
         }
 
-
         if (args.length == 2) { // x z pos
             try {
                 double x = Double.parseDouble(args[0]);
@@ -66,7 +65,6 @@ public class LookAtCommand implements ICommand {
         }
 
         try { // x y z pos
-
             double x = Double.parseDouble(args[0]);
             double y = Double.parseDouble(args[1]);
             double z = Double.parseDouble(args[2]);
