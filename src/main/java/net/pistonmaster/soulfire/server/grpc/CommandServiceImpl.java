@@ -20,7 +20,7 @@ package net.pistonmaster.soulfire.server.grpc;
 import io.grpc.stub.StreamObserver;
 import lombok.RequiredArgsConstructor;
 import net.pistonmaster.soulfire.grpc.generated.*;
-import net.pistonmaster.soulfire.server.ServerCommandManager;
+import net.pistonmaster.soulfire.server.command.ServerCommandManager;
 
 import javax.inject.Inject;
 
