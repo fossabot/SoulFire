@@ -30,6 +30,7 @@ import net.pistonmaster.soulfire.server.api.SoulFireAPI;
 import net.pistonmaster.soulfire.server.api.event.lifecycle.DispatcherInitEvent;
 import net.pistonmaster.soulfire.server.command.commands.*;
 import net.pistonmaster.soulfire.server.command.commands.interaction.*;
+import net.pistonmaster.soulfire.server.command.commands.misc.*;
 import net.pistonmaster.soulfire.server.command.commands.movement.*;
 import net.pistonmaster.soulfire.server.command.commands.utility.*;
 import net.pistonmaster.soulfire.server.protocol.BotConnection;
@@ -86,6 +87,9 @@ public class ServerCommandManager {
         // Utility
         commands.add(new OnlineCommand());
         commands.add(new StatsCommand());
+
+        // Misc
+        commands.add(new CrashCommand());
 
         SoulFireAPI.postEvent(new DispatcherInitEvent(dispatcher));
     }

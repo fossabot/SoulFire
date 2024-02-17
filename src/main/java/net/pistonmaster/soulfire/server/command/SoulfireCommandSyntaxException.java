@@ -17,7 +17,7 @@
  */
 package net.pistonmaster.soulfire.server.command;
 
-public class SoulfireCommandSyntaxException extends Exception {
+public class SoulfireCommandSyntaxException extends IllegalArgumentException {
     public SoulfireCommandSyntaxException(String message) {
         super(message);
     }
